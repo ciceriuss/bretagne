@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz sur la Culture Bretonne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quizz sur la Culture Bretonne</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="musique.html">Musiques</a></li>
+                <li><a href="coutume.html">Coutumes</a></li>
+                <li><a href="cuisine.html">Cuisine</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Testez vos connaissances</h2>
+            <form id="quizzForm">
+                <div class="question">
+                    <label for="q1">Quel instrument est typique de la musique bretonne ?</label><br>
+                    <input type="text" id="q1" name="q1"><br>
+                </div>
+                <div class="question">
+                    <label for="q2">Quel est un plat traditionnel breton ?</label><br>
+                    <input type="text" id="q2" name="q2"><br>
+                </div>
+                <div class="question">
+                    <label for="q3">Qu'est-ce qu'un fest-noz ?</label><br>
+                    <input type="text" id="q3" name="q3"><br>
+                </div>
+                <input type="button" value="Soumettre" onclick="checkAnswers()">
+            </form>
+            <div id="results"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Culture Bretonne</p>
+    </footer>
+    <script src="quizz.js"></script>
+</body>
+</html>
